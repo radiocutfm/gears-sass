@@ -3,9 +3,6 @@ gears-sass
 
 SCSS compiler for Gears. 
 
-Bundled [node-sass](https://github.com/andrew/node-sass) version: 0.8.6
-
-
 Installation
 ------------
 

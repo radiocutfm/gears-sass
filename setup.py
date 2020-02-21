@@ -7,7 +7,7 @@ def read(filename):
 
 setup(
     name='gears-sass',
-    version='0.2.2',
+    version='0.3.0',
     license='ISC',
     author='Eugene Cheltsov',
     author_email='chill.icp@gmail.com',
