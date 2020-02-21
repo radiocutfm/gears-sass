@@ -12,18 +12,16 @@ process.stdin.on('data', function(chunk) {
 });
 
 process.stdin.on('end', function() {
-    sass.render({
+    var result = sass.renderSync({
         data: source,
         outputStyle: 'nested',      //nested|compressed|expanded
         sourceComments: 'none',     //none|normal
         includePaths: paths,
         imagePath: '/static',
-        success: function (css) {
-            process.stdout.write(css);
-        },
         error: function (error) {
             throw error;
         }
 
-    })
+    });
+    process.stdout.write(result.css);
 });
